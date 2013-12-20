@@ -25,6 +25,7 @@
 		D23A0176186489F700BB3F59 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23A0151186489F700BB3F59 /* CoreData.framework */; };
 		D23A017E186489F700BB3F59 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D23A017C186489F700BB3F59 /* InfoPlist.strings */; };
 		D23A0180186489F700BB3F59 /* SwapStoresTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D23A017F186489F700BB3F59 /* SwapStoresTests.m */; };
+		D23A018B18648B0600BB3F59 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = D23A018A18648B0600BB3F59 /* Event.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		D23A017B186489F700BB3F59 /* SwapStoresTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SwapStoresTests-Info.plist"; sourceTree = "<group>"; };
 		D23A017D186489F700BB3F59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D23A017F186489F700BB3F59 /* SwapStoresTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwapStoresTests.m; sourceTree = "<group>"; };
+		D23A018918648B0600BB3F59 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		D23A018A18648B0600BB3F59 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,8 @@
 				D23A0169186489F700BB3F59 /* FlipsideViewController.m */,
 				D23A016B186489F700BB3F59 /* Images.xcassets */,
 				D23A0162186489F700BB3F59 /* SwapStores.xcdatamodeld */,
+				D23A018918648B0600BB3F59 /* Event.h */,
+				D23A018A18648B0600BB3F59 /* Event.m */,
 				D23A0154186489F700BB3F59 /* Supporting Files */,
 			);
 			path = SwapStores;
@@ -263,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D23A018B18648B0600BB3F59 /* Event.m in Sources */,
 				D23A0164186489F700BB3F59 /* SwapStores.xcdatamodeld in Sources */,
 				D23A015E186489F700BB3F59 /* AppDelegate.m in Sources */,
 				D23A015A186489F700BB3F59 /* main.m in Sources */,
@@ -350,7 +356,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -383,7 +389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -397,6 +403,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SwapStores/SwapStores-Prefix.pch";
 				INFOPLIST_FILE = "SwapStores/SwapStores-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -410,6 +417,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SwapStores/SwapStores-Prefix.pch";
 				INFOPLIST_FILE = "SwapStores/SwapStores-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
