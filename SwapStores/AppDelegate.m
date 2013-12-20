@@ -108,7 +108,6 @@
     }
     
     NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"Store1.sqlite"];
-    // NSURL *store2URL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"Store2.sqlite"];
     
     NSError *error = nil;
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
@@ -117,12 +116,7 @@
         NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
         abort();
     }
-    
-//    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:store2URL options:@{NSSQLitePragmasOption: @{@"journal_mode": @"delete"}} error:&error]) {
-//        
-//        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-//        abort();
-//    }
+
     
     return _persistentStoreCoordinator;
 }

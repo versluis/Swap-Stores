@@ -86,20 +86,6 @@
     NSLog(@"\n End of listing.");
 }
 
-- (void)mountSecondStore {
-    
-    // let's remove our first store and mount a second one
-    // we assume those are called Store1.sqlite and Store2.sqlite
-    
-    AppDelegate *myAppDelegate = [[AppDelegate alloc]init];
-    // NSURL *store1 = [myAppDelegate.applicationDocumentsDirectory URLByAppendingPathComponent:@"Store1.sqlite"];
-    NSURL *store2 = [myAppDelegate.applicationDocumentsDirectory URLByAppendingPathComponent:@"Store2.sqlite"];
-    
-    NSError *error = nil;
-    if (![myAppDelegate.persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:store2 options:@{NSSQLitePragmasOption: @{@"journal_mode": @"delete"}} error:&error]) {
-        NSLog(@"Couldn't add the second persistent store. Error was: %@", error);
-    }
-}
 
 - (void)swapStores {
     
